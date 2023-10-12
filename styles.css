@@ -416,18 +416,6 @@ header .item-button a:hover{
   color: #0066ec;
   position: relative;
   left: 20px;
+  top: 5px;
 }
 
-.farbverlaufBox {
-  width: calc(100% - 3cm);
-  height: calc(100% - 3cm);
-  background: linear-gradient(to bottom, #ffffff, #00a2ff);
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  position: absolute;
-  top: 600px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
