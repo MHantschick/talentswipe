@@ -410,3 +410,24 @@ header .item-button a:hover{
   color:#aaa;
   margin-bottom:0;
 }
+
+/*Datenschutzseite*/
+.datenschutzÜberschrift {
+  color: #0066ec;
+  position: relative;
+  left: 20px;
+}
+
+.farbverlaufBox {
+  width: calc(100% - 3cm);
+  height: calc(100% - 3cm);
+  background: linear-gradient(to bottom, #ffffff, #00a2ff);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
