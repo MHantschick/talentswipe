@@ -9,8 +9,6 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-
 </head>
 
 <body>
@@ -86,13 +84,68 @@
 
     </header>
     <!-- Inhalt -->
-    <br>        
-    <h1 class="datenschutzÜberschrift">Datenschutzerklärung</h1>
-    <br>
-    <iframe src="Datenschutz.pdf" width="100%" height="1400"></iframe>
+    
+<div class="container">
+    <button id="showForm">Jetzt registrieren!</button>
+    <div id="formContainer" class="hidden">
+        <form>
+            <br>
+            <label for="vorname">Vorname:</label>
+            <input type="text" id="vorname" name="vorname" required><br><br>
+
+            <label for="nachname">Nachname:</label>
+            <input type="text" id="nachname" name="nachname" required><br><br>
+
+            <label for="birthdate">Geburtsdatum:</label>
+            <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+            <label for="email">E-Mail Adresse:</label>
+            <input type="text" id="email" name="email" required><br><br>
+
+            <label for="userSelection">Ich suche:</label>
+            <select id="userSelection" name="userSelection" required>
+            <option value="schuelerpraktikum">Schülerpraktikum</option>
+            <option value="dualesstudium">Duales Studium</option>
+            <option value="aushilfsjob">Aushilfsjob</option>
+            </select><br><br>
+
+            <label for="username">Benutzername:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Passwort:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="password2">Passwort bestätigen:</label>
+            <input type="password" id="password2" name="password2" required><br><br>
+
+            <input type="submit" value="Registrieren">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</div>
+
+
+    <div class="container">
+        <form action="dein_server_script.php" method="POST">
+            <h2>Anmeldung</h2>
+            <div class="form-group">
+                <label for="benutzername">Benutzername</label>
+                <input type="text" id="benutzername" name="benutzername" required>
+            </div>
+            <div class="form-group">
+                <label for="passwort">Passwort</label>
+                <input type="password" id="passwort" name="passwort" required>
+            </div>
+            <button type="submit">Anmelden</button>
+            <button2 type="submit">Passwort vergessen?</button2>
+            
+        </form>
+    </div>
     <div style="height: 200px;"></div>
 
     
+
+
 
     <!-- Footer -->
 
