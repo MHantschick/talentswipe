@@ -3,7 +3,7 @@
     document.getElementById('formContainer').classList.remove('hidden');
 });*/
 
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
     function toggleForm() {
       var formContainer = document.getElementById('formContainer');
       formContainer.classList.toggle('hidden');
@@ -11,6 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
     var showFormButton = document.getElementById('showForm');
     showFormButton.addEventListener('click', toggleForm);
-  });
+  });*/
   
 
