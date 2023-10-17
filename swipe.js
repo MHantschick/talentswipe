@@ -1,12 +1,12 @@
 'use strict';
 
-var tinderContainer = document.querySelector('.tinder');
-var allCards = document.querySelectorAll('.tinder--card');
+var swipeContainer = document.querySelector('.swipe');
+var allCards = document.querySelectorAll('.swipe--card');
 var nope = document.getElementById('nope');
 var love = document.getElementById('love');
 
 function initCards(card, index) {
-  var newCards = document.querySelectorAll('.tinder--card:not(.removed)');
+  var newCards = document.querySelectorAll('.swipe--card:not(.removed)');
 
   newCards.forEach(function (card, index) {
     card.style.zIndex = allCards.length - index;
@@ -14,7 +14,7 @@ function initCards(card, index) {
     card.style.opacity = (10 - index) / 10;
   });
   
-  tinderContainer.classList.add('loaded');
+  swipeContainer.classList.add('loaded');
 }
 
 initCards();
@@ -30,8 +30,8 @@ allCards.forEach(function (el) {
     if (event.deltaX === 0) return;
     if (event.center.x === 0 && event.center.y === 0) return;
 
-    tinderContainer.classList.toggle('tinder_love', event.deltaX > 0);
-    tinderContainer.classList.toggle('tinder_nope', event.deltaX < 0);
+    swipeContainer.classList.toggle('swipe_love', event.deltaX > 0);
+    swipeContainer.classList.toggle('swipe_nope', event.deltaX < 0);
 
     var xMulti = event.deltaX * 0.03;
     var yMulti = event.deltaY / 80;
@@ -42,8 +42,8 @@ allCards.forEach(function (el) {
 
   hammertime.on('panend', function (event) {
     el.classList.remove('moving');
-    tinderContainer.classList.remove('tinder_love');
-    tinderContainer.classList.remove('tinder_nope');
+    swipeContainer.classList.remove('swipe_love');
+    swipeContainer.classList.remove('swipe_nope');
 
     var moveOutWidth = document.body.clientWidth;
     var keep = Math.abs(event.deltaX) < 80 || Math.abs(event.velocityX) < 0.5;
@@ -69,7 +69,7 @@ allCards.forEach(function (el) {
 
 function createButtonListener(love) {
   return function (event) {
-    var cards = document.querySelectorAll('.tinder--card:not(.removed)');
+    var cards = document.querySelectorAll('.swipe--card:not(.removed)');
     var moveOutWidth = document.body.clientWidth * 1.5;
 
     if (!cards.length) return false;
