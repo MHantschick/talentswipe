@@ -9,6 +9,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -85,51 +86,94 @@
     </header>
     <!-- Inhalt -->
     
-<div class="container">
     
+      
+<br>
+<div class="button-container">
+    <div class="button" onclick="showText('button1')">Arbeitnehmer</div>
+    <div class="button" onclick="showText('button2')">Arbeitgeber</div>
+  </div>
+  
+  <div id="button1Text" class="hidden-text">
     
-        <form>
-            <br>
-            <label for="vorname">Vorname:</label>
-            <input type="text" id="vorname" name="vorname" required><br><br>
 
-            <label for="nachname">Nachname:</label>
-            <input type="text" id="nachname" name="nachname" required><br><br>
-
-            <label for="birthdate">Geburtsdatum:</label>
-            <input type="date" id="birthdate" name="birthdate" required><br><br>
-
-            <label for="email">E-Mail Adresse:</label>
-            <input type="text" id="email" name="email" required><br><br>
-
-            <label for="userSelection">Ich suche:</label>
-            <select id="userSelection" name="userSelection" required>
-            <option value="schuelerpraktikum">Schülerpraktikum</option>
-            <option value="dualesstudium">Duales Studium</option>
-            <option value="aushilfsjob">Aushilfsjob</option>
-            </select><br><br>
-
-            <label for="username">Benutzername:</label>
-            <input type="text" id="username" name="username" required><br><br>
-
-            <label for="password">Passwort:</label>
-            <input type="password" id="password" name="password" required><br><br>
-
-            <label for="password2">Passwort bestätigen:</label>
-            <input type="password" id="password2" name="password2" required><br><br>
-
-            <input type="submit" value="Registrieren">
-        </form>
+    <!--Registrierung Bewerber-->
+    <div class="container">
+         <form>
+              <br>
+              <label for="vorname">Vorname:</label>
+              <input type="text" id="vorname" name="vorname" required><br><br>
+  
+              <label for="nachname">Nachname:</label>
+              <input type="text" id="nachname" name="nachname" required><br><br>
+  
+              <label for="birthdate">Geburtsdatum:</label>
+              <input type="date" id="birthdate" name="birthdate" required><br><br>
+  
+              <label for="email">E-Mail Adresse:</label>
+              <input type="text" id="email" name="email" required><br><br>
+  
+              <label for="userSelection">Ich suche:</label>
+              <select id="userSelection" name="userSelection" required>
+              <option value="schuelerpraktikum">Schülerpraktikum</option>
+              <option value="dualesstudium">Duales Studium</option>
+              <option value="aushilfsjob">Aushilfsjob</option>
+              </select><br><br>
+  
+              <label for="username">Benutzername:</label>
+              <input type="text" id="username" name="username" required><br><br>
+  
+              <label for="password">Passwort:</label>
+              <input type="password" id="password" name="password" required><br><br>
+  
+              <label for="password2">Passwort bestätigen:</label>
+              <input type="password" id="password2" name="password2" required><br><br>
+  
+              <input type="submit" value="Registrieren">
+          </form>
+      </div>
     </div>
-    <script src="script.js"></script>
+  
+  
+  
+  <div id="button2Text" class="hidden-text">
+    
+<!--Registrierung Unternehmen-->
+<div class="container">    
+    <form>
+        <br>
+        <label for="Firmenname">Firmenname:</label>
+        <input type="text" id="Firmenname" name="Firmenname" required><br><br>
+
+        <label for="plz">Postleitzahl:</label>
+        <input type="number" id="plz" name="plz" required><br><br>
+
+        <label for="ort">Ort:</label>
+        <input type="text" id="ort" name="ort" required><br><br>
+
+        <label for="street">Straße und Hausnummer:</label>
+        <input type="text" id="street" name="street" required><br><br>
+
+        <label for="ansprechpartner">Ansprechpartner (Vor- und Nachnahme):</label>
+        <input type="text" id="ansprechpartner" name="ansprechpartner" required><br><br>
+
+        <label for="email">Kontakt E-Mail Adresse:</label>
+        <input type="text" id="email" name="email" required><br><br>
+
+        <label for="number">Kontakt Telefonnummer:</label>
+        <input type="text" id="number" name="number" required><br><br>
+        
+        <label for="password">Passwort:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="password2">Passwort bestätigen:</label>
+        <input type="password" id="password2" name="password2" required><br><br>
+
+        <input type="submit" value="Registrieren">
+    </form>
+    </div>
 </div>
-
-
-    
-    <div style="height: 50px;"></div>
-
-    
-
+<br>
 
 
     <!-- Footer -->

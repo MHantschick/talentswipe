@@ -271,7 +271,7 @@ header .item-button a:hover {
 
 /*Anmeldeseite*/
 
-.container {
+/*.container {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -350,6 +350,98 @@ button3:hover {
 
 .hidden {
   display: none;
+}*/
+
+/*Registrierungsseite*/
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #0056b3;
+}
+
+.hidden-text {
+  display: none;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 
+
+/*Anmeldeseite*/
+
+.button2 {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button3 {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  float: right;
+}
+
+.button2:hover {
+  background-color: #0056b3;
+}
+
+.button3:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 50px;
+}
+
+button.button3 {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
