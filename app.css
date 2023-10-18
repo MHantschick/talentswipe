@@ -1,0 +1,190 @@
+/*App-Demo*/
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .swipe {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+  }
+  
+  .loaded.swipe {
+    opacity: 1;
+  }
+  
+  .swipe--status {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+  }
+  
+  .swipe--status i {
+    font-size: 100px;
+    opacity: 0;
+    transform: scale(0.3);
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    width: 100px;
+    margin-left: -50px;
+  }
+  
+  .swipe_love .fa-heart {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  
+  .swipe_nope .fa-remove {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  
+  .swipe--cards {
+    flex-grow: 1;
+    padding-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1;
+  }
+  
+  .swipe--card {
+    display: inline-block;
+    width: 90vw;
+    max-width: 400px;
+    height: 70vh;
+    background: #FFFFFF;
+    padding-bottom: 40px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    will-change: transform;
+    transition: all 0.3s ease-in-out;
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+  
+  .moving.swipe--card {
+    transition: none;
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
+  
+  .swipe--card img {
+    max-width: 75%;
+    pointer-events: none;
+  }
+  
+  .swipe--card h3 {
+    margin-top: 32px;
+    font-size: 32px;
+    padding: 0 16px;
+    pointer-events: none;
+  }
+  
+  .swipe--card p {
+    margin-top: 24px;
+    font-size: 20px;
+    padding: 0 16px;
+    pointer-events: none;
+  }
+  
+  .swipe--buttons {
+    flex: 0 0 100px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .swipe--buttons button {
+    border-radius: 50%;
+    line-height: 60px;
+    width: 60px;
+    border: 0;
+    background: #FFFFFF;
+    display: inline-block;
+    margin: 0 8px;
+  }
+  
+  .swipe--buttons button:focus {
+    outline: 0;
+  }
+  
+  .swipe--buttons i {
+    font-size: 32px;
+    vertical-align: middle;
+  }
+  
+  .fa-heart {
+    color: #01DF01;
+  }
+  
+  .fa-remove {
+    color: #FE2E2E;
+  }
+
+  /* The device with borders */
+    
+.smartphone {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+  }
+  
+  /* The horizontal line on the top of the device */
+  .smartphone:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+  }
+  
+  /* The circle on the bottom of the device */
+  .smartphone:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+  }
+  
+  /* The screen (or content) of the device */
+  .smartphone .content {
+    width: 100%;
+    height: 100%;
+    background: white;
+  }
+      
+  iframe {
+      width: 100%;
+      height: 100%;
+      border: 100%;
+  }
