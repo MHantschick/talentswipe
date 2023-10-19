@@ -395,8 +395,6 @@ input {
   border-radius: 4px;
 }
 
-
-
 /*Anmeldeseite*/
 
 .button2 {
@@ -444,4 +442,58 @@ button.button3 {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+}
+
+/* index slider */
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.mySlides {
+  display: none;
+  animation: zoom 7s ease forwards;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+.textmain1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 180px;
+  display: none;
+  animation: blendin 1s ease forwards;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes blendin {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.spacer {
+  height: 200px; /* Die gewünschte Höhe des Abstandshalters in Pixeln oder einer anderen Einheit */
 }
