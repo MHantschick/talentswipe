@@ -365,7 +365,7 @@ input {
   background-color: #0056b3;
 }
 
-.container {
+.login-container {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -536,3 +536,9 @@ iframe {
   pointer-events: none;
 }
 
+/* Impressum */
+
+.impressum {
+  color: #0056b3;
+  
+}
