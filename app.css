@@ -220,3 +220,25 @@
     pointer-events: none;
 }
 
+.mehr-details-button {
+    display: inline-block;
+    padding: 8px 16px; /* Kleineres Padding für Breite und Höhe */
+    background-color: #dddddd;
+    color: #000;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px; /* Kleinere Abrundung der Ecken */
+    font-size: 14px; /* Kleinere Schriftgröße */
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.mehr-details-button:hover {
+    background-color: #00a2ff;
+    transform: scale(1.05);
+}
+
+
+
+
