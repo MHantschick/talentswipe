@@ -3,6 +3,7 @@
 body {
   font-family: "Urbanist", sans-serif;
   overflow-x: hidden;
+  background-color: #F4F4ED;
 }
 
 a {
@@ -19,7 +20,7 @@ a:hover {
 header {
   width: 100vw;
   height: 100px;
-  background-color: #fff;
+  background-color: #F4F4ED;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
   display: flex;
   align-items: center;
@@ -53,7 +54,7 @@ header .item {
   letter-spacing: 2px;
   padding: 8px 0;
   transition: all 0.1s ease;
-  border-bottom: 3px solid #fbfbfb;
+  border-bottom: 3px solid #F4F4ED;
   white-space: nowrap;
 }
 
@@ -77,6 +78,26 @@ header .item-button a {
 
 header .item-button a:hover {
   background-color: #00a2ff;
+}
+.dropdown-menu {
+  background-color: #F4F4ED;
+  border: none;
+  
+}
+.dropdown-item {
+  font-size: 18px;
+  color: #0066ec;
+  background-color: #F4F4ED;
+}
+
+.dropdown-item:hover {
+  color: #00a2ff;
+  background-color: #F4F4ED;
+
+}
+
+.dropdown-toggle:hover {
+  padding-bottom:18px;
 }
 
 /* modal */
@@ -203,9 +224,9 @@ header .item-button a:hover {
 
 .footer-basic {
   padding: 40px 0;
-  background-color: #ffffff;
+  background-color: #cececb;
   color: #4b4c4d;
-  border-top: 1px solid #00a2ff;
+  border-top: 1px solid #eaeff2;
 }
 
 .footer-basic ul {
