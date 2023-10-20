@@ -188,3 +188,35 @@
       height: 100%;
       border: 100%;
   }
+
+  .rounded-box {
+    width: 100px;
+    height: 30px;
+    margin: 0 1px;
+    background-color: #dddddd; /* Grauer Hintergrund */
+    border-radius: 10px; /* Abrundungseffekt */
+    display: flex; /* Container in Flex-Box umwandeln */
+    align-items: center; /* Text vertikal in der Mitte ausrichten */
+    justify-content: left; /* Text horizontal in der Mitte ausrichten */
+    pointer-events: none;
+}
+
+.img-icon {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+.icon-text {
+    font-size: 80%;
+    pointer-events: none;
+}
+
+.flex-container {
+    padding-top: 20px;
+    display: flex; /* Flexbox verwenden */
+    justify-content: space-between; /* Abstand zwischen den Elementen verteilen */
+    align-items: center; /* Elemente vertikal zentrieren */
+    pointer-events: none;
+}
+
