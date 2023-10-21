@@ -190,16 +190,16 @@
   }
 
   .rounded-box {
-    width: 100px;
-    height: 30px;
+    /* Keine feste Breite und Höhe, automatische Anpassung an den Text */
     margin: 0 1px;
     background-color: #dddddd; /* Grauer Hintergrund */
     border-radius: 10px; /* Abrundungseffekt */
     display: flex; /* Container in Flex-Box umwandeln */
     align-items: center; /* Text vertikal in der Mitte ausrichten */
-    justify-content: left; /* Text horizontal in der Mitte ausrichten */
+    justify-content: left; /* Text horizontal links ausrichten */
     pointer-events: none;
 }
+
 
 .img-icon {
     width: 30px;
@@ -210,6 +210,7 @@
 .icon-text {
     font-size: 80%;
     pointer-events: none;
+    margin-right: 10px;
 }
 
 .flex-container {
