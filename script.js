@@ -5,11 +5,13 @@ let slideIndex = 0;
 
 function showSlides() {
   const slides = document.querySelectorAll(".mySlides");
-  const texts = document.querySelectorAll(".textmain1");
+  const texts1 = document.querySelectorAll(".textmain1");
+  const texts2 = document.querySelectorAll(".textmain2");
 
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
-    texts[i].style.display = "none";
+    texts1[i].style.display = "none";
+    texts2[i].style.display = "none";
   }
 
   slideIndex++;
@@ -20,8 +22,11 @@ function showSlides() {
   slides[slideIndex - 1].style.display = "block";
 
   setTimeout(function () {
-    texts[slideIndex - 1].style.display = "block";
-  }, 1000);
+    texts1[slideIndex - 1].style.display = "block";
+    setTimeout(function () {
+      texts2[slideIndex - 1].style.display = "block";
+    }, 1000); // Zeigt den zweiten Text nach 1 Sekunde an
+  }, 1000); // Zeigt den ersten Text nach 1 Sekunde an
 
   setTimeout(showSlides, 7000);
 }

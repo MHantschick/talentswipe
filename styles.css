@@ -3,7 +3,7 @@
 body {
   font-family: "Urbanist", sans-serif;
   overflow-x: hidden;
-  background-color: #F4F4ED;
+  background-color: #f4f4ed;
 }
 
 a {
@@ -20,7 +20,7 @@ a:hover {
 header {
   width: 100vw;
   height: 100px;
-  background-color: #F4F4ED;
+  background-color: #f4f4ed;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
   display: flex;
   align-items: center;
@@ -54,7 +54,7 @@ header .item {
   letter-spacing: 2px;
   padding: 8px 0;
   transition: all 0.1s ease;
-  border-bottom: 3px solid #F4F4ED;
+  border-bottom: 3px solid #f4f4ed;
   white-space: nowrap;
 }
 
@@ -80,24 +80,22 @@ header .item-button a:hover {
   background-color: #00a2ff;
 }
 .dropdown-menu {
-  background-color: #F4F4ED;
+  background-color: #f4f4ed;
   border: none;
-  
 }
 .dropdown-item {
   font-size: 18px;
   color: #0066ec;
-  background-color: #F4F4ED;
+  background-color: #f4f4ed;
 }
 
 .dropdown-item:hover {
   color: #00a2ff;
-  background-color: #F4F4ED;
-
+  background-color: #f4f4ed;
 }
 
 .dropdown-toggle:hover {
-  padding-bottom:18px;
+  padding-bottom: 18px;
 }
 
 /* modal */
@@ -287,9 +285,7 @@ header .item-button a:hover {
 .ÜberschriftBlau {
   color: #0066ec;
   position: relative;
-  
 }
-
 
 /*Registrierungsseite*/
 
@@ -389,11 +385,12 @@ button.button3 {
   position: relative;
   max-width: 100%;
   overflow: hidden;
+  height: 700px;
 }
 
 .mySlides {
   display: none;
-  animation: zoom 7s ease forwards;
+  animation: zoom 10s ease forwards;
   position: relative;
 }
 
@@ -403,15 +400,31 @@ img {
 }
 .textmain1 {
   position: absolute;
-  top: 50%;
+  text-align: center;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   padding: 10px;
   font-weight: bold;
-  font-size: 180px;
+  font-size: 90px;
   display: none;
-  animation: blendin 1s ease forwards;
+  animation: blendin 2s ease forwards;
+  white-space: nowrap;
+}
+.textmain2 {
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 90px;
+  display: none;
+  animation: blendin 2s ease forwards;
+  white-space: nowrap;
 }
 
 @keyframes zoom {
@@ -437,19 +450,57 @@ img {
   height: 200px; /* Die gewünschte Höhe des Abstandshalters in Pixeln oder einer anderen Einheit */
 }
 
+/*startseite 2section  */
 
+.start-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 700px;
+  padding: 20px;
+}
+
+.start-2 .section-image {
+  flex: 1;
+  max-width: 40%;
+  padding: 10px;
+}
+
+.start-2 .section-image img {
+  max-width: 70%;
+  height: auto;
+  margin-left: 100px;
+}
+
+.start-2 .section-content {
+  flex: 1;
+  max-width: 500px; /* Schmale Breite für den Textbereich */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Text vertikal zentrieren */
+  align-items: center;
+  text-align: justify;
+  margin-right: 100px;
+}
+
+.start-2 .section-content h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.start-2 .section-content p {
+  font-size: 16px;
+  color: #666;
+}
 
 /*Kontoseite*/
-
-
-
-
 
 .button-container2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 .small-window {
@@ -465,12 +516,6 @@ img {
   justify-content: space-between; /* Die Fenster nebeneinander platzieren */
   max-width: 500px; /* Optional: Begrenzt die Breite der Container */
 }
-
-
-
-
-
-
 
 .img-icon {
   width: 30px;
@@ -517,11 +562,11 @@ img {
   height: 100%;
   background: white;
 }
-    
+
 iframe {
-    width: 100%;
-    height: 100%;
-    border: 100%;
+  width: 100%;
+  height: 100%;
+  border: 100%;
 }
 
 .rounded-box {
@@ -540,5 +585,4 @@ iframe {
 
 .impressum {
   color: #0056b3;
-  
 }
