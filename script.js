@@ -26,12 +26,32 @@ function showSlides() {
     setTimeout(function () {
       texts2[slideIndex - 1].style.display = "block";
     }, 1000); // Zeigt den zweiten Text nach 1 Sekunde an
-  }, 1000); // Zeigt den ersten Text nach 1 Sekunde an
+  }, 2000); // Zeigt den ersten Text nach 1 Sekunde an
 
-  setTimeout(showSlides, 7000);
+  setTimeout(showSlides, 10000);
 }
 
 showSlides();
+
+//feedback slider
+
+let slideIndex2 = 0;
+
+function showSlides2() {
+  const slides2 = document.querySelectorAll(".myFeedback");
+
+  for (let i = 0; i < slides2.length; i++) {
+    slides2[i].style.display = "none";
+  }
+  slideIndex2++;
+  if (slideIndex2 > slides2.length) {
+    slideIndex2 = 1;
+  }
+
+  slides2[slideIndex2 - 1].style.display = "block";
+  setTimeout(showSlides2, 10000);
+}
+showSlides2();
 
 /*Anmeldeseite*/
 /*document.getElementById('showForm').addEventListener('click', function() {

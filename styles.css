@@ -446,10 +446,6 @@ img {
   }
 }
 
-.spacer {
-  height: 200px; /* Die gewünschte Höhe des Abstandshalters in Pixeln oder einer anderen Einheit */
-}
-
 /*startseite 2section  */
 
 .start-2 {
@@ -492,6 +488,100 @@ img {
 .start-2 .section-content p {
   font-size: 16px;
   color: #666;
+}
+
+/* startseite 4*/
+.start-4.black-bar {
+  background-color: #007bff;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.start-4 .text-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.start-4 .text {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.start-4 .text:hover {
+  transform: scale(1.5); /* Text leicht größer machen */
+  color: #00a2ff; /* Text leicht dunkler machen */
+}
+
+/*startseite 3section  */
+
+.start-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 700px;
+  padding: 20px;
+}
+.start-3 .section-content {
+  flex: 1;
+  max-width: 500px; /* Schmale Breite für den Textbereich */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Text vertikal zentrieren */
+  align-items: center;
+  text-align: justify;
+  margin-left: 100px;
+}
+
+.start-3 .section-image {
+  flex: 1;
+  max-width: 40%;
+  padding: 10px;
+}
+
+.start-3 .section-image img {
+  max-width: 70%;
+  height: auto;
+  margin-right: 100px;
+}
+
+.start-3 .section-content h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.start-3 .section-content p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* feedback slider */
+
+.slideshow-container2 {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 700px;
+}
+
+.myFeedback {
+  display: none;
+  position: relative;
+  background-image: url(./img/start-background-1.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 /*Kontoseite*/
