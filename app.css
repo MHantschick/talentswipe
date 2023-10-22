@@ -1,4 +1,9 @@
 /*App-Demo*/
+
+body {
+    font-family: "Urbanist", sans-serif;
+  }
+
 *, *:before, *:after {
     box-sizing: border-box;
     padding: 0;
