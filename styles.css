@@ -390,7 +390,7 @@ button.button3 {
 
 .mySlides {
   display: none;
-  animation: zoom 10s ease forwards;
+  animation: zoom 7s ease forwards;
   position: relative;
 }
 
@@ -409,7 +409,7 @@ img {
   font-weight: bold;
   font-size: 90px;
   display: none;
-  animation: blendin 2s ease forwards;
+  animation: blendin 1s ease forwards;
   white-space: nowrap;
 }
 .textmain2 {
@@ -423,7 +423,7 @@ img {
   font-weight: bold;
   font-size: 90px;
   display: none;
-  animation: blendin 2s ease forwards;
+  animation: blendin 1s ease forwards;
   white-space: nowrap;
 }
 

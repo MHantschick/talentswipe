@@ -26,9 +26,9 @@ function showSlides() {
     setTimeout(function () {
       texts2[slideIndex - 1].style.display = "block";
     }, 1000); // Zeigt den zweiten Text nach 1 Sekunde an
-  }, 2000); // Zeigt den ersten Text nach 1 Sekunde an
+  }, 1000); // Zeigt den ersten Text nach 1 Sekunde an
 
-  setTimeout(showSlides, 10000);
+  setTimeout(showSlides, 7000);
 }
 
 showSlides();
