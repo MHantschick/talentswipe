@@ -252,6 +252,7 @@ body {
     background-color: #f2f2f2; /* Hintergrundfarbe des Hero-Bereichs */
     overflow: hidden; /* Um sicherzustellen, dass das Bild den Hero-Bereich nicht verlässt */
     position: relative;
+    margin-bottom: 20px
 }
 
 /* Das Bild wird als Hintergrundbild für den Hero-Bereich festgelegt */
@@ -307,5 +308,41 @@ body {
 a img {
     width: 300px; /* Passe die Breite des Buttons an */
     height: auto; /* Behalte das Seitenverhältnis bei */
+}
+
+.container-description {
+    display: flex;
+}
+
+.app-screenshot {
+    flex: 1;
+    margin-left: 80px;
+  }
+
+  .app-screenshot img {
+    width: 50%;
+    height: auto;
+}
+
+
+.swipe-description {
+    flex: 1;
+  }
+
+.company-container {
+    width: 100%; /* Breite des Containers */
+    height: 25%; /* Höhe des Containers */
+    display: flex; /* Verwendet Flexbox zur Zentrierung */
+    justify-content: center; /* Horizontal zentrieren */
+    align-items: center; /* Vertikal zentrieren */
+    overflow: hidden; /* Verhindert das Überlaufen des Bildes aus dem Container */
+    pointer-events: none;
+}
+
+.company-logo {
+    max-width: 100%; /* Begrenzt die Breite des Bildes auf die Breite des Containers */
+    max-height: 100%; /* Begrenzt die Höhe des Bildes auf die Höhe des Containers */
+    display: block; /* Entfernt den Abstand unten, der normalerweise bei inline-Bildern vorhanden ist */
+    pointer-events: none;
 }
 
