@@ -3,87 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <title>Stellenbeschreibung</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Urbanist", sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
+            background-color: #fff;
         }
 
         header {
             background-color: #00a2ff;
-            color: #fff;
+            
             text-align: center;
             padding: 10px;
         }
 
         .info-container {
+            
+            margin-left: 5px;
+            margin-top: 2px;
             background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-align: left;
+            
+          
         }
 
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 10px;
+            margin-left: 5px;
+            margin-top: 2px;
             background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+            
         }
 
-        h1 {
+        h2 {
             color: #fff;
+            font-weight: bold;
         }
 
-        .section {
-            margin: 5px 0;
-        }
-
-        .section h2 {
+        .container h3 {
             color: #0066ec;
+            cursor: pointer;
+            
         }
 
         p {
-            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .bewerben-button {
+            background-color: #00a2ff; /* Blauer Hintergrund */
+            color: #fff; /* Weiße Schriftfarbe */
+            border: 1px solid #00a2ff; /* Leichte Umrandung */
+            border-radius: 5px; /* Abgerundete Ecken */
+            padding: 10px 20px; /* Innenabstand (anpassbar) */
+            font-size: 16px; /* Schriftgröße (anpassbar) */
+            cursor: pointer; /* Ändert den Mauszeiger beim Überfahren */        
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
         }
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
         <h2>Stellenbeschreibung</h2>
     </header>
 
+    <div class="info-container">
+            <p><strong>DHBW Mannheim</strong></p>
+            <p><strong>Duales Studium (Wirtschaftsinformatik - Application Management)</strong></p>
+            <p><strong>Standort:</strong> Mannheim</p>
+            <p><strong>Startdatum:</strong> 01. Oktober 2024</p>
+            <p><strong>Dauer:</strong> 3 Jahre</p>
+            <p><strong>Abschluss:</strong> Bachelor of Science (B.Sc.)</p>
+        </div>
+     
     <div class="container">
-        <div class="section">
-            <p>Unternehmen: Beispielunternehmen</p>
-            <p>Jobbezeichnung: Beispieljob</p>
-            <p>Standort: Musterstadt</p>
-            <p>Startdatum: 01. Januar 2024</p>
-            <p>Vergütung:</p>
-            <p>1. Jahr: 1.000€,</p>
-            <p>2. Jahr: 1.100€,</p>
-            <p>3. Jahr: 1.200€</p>
-            <p>Weitere Informationen zur Stelle und den Erwartungen an den Bewerber.</p>
-        </div>
-        
-        <div class="section">
-            <h2>Aufgaben</h2>
-            <p>Hier stehen die Aufgaben, die im Rahmen dieser Stelle erledigt werden müssen.</p>
-        </div>
-
-        <div class="section">
-            <h2>Fähigkeiten</h2>
-            <p>Die erforderlichen Fähigkeiten und Qualifikationen für diese Position.</p>
-        </div>
-
-        <div class="section">
-            <h2>Unternehmen</h2>
+            <h3>Unternehmensprofil <i class="fas fa-chevron-down"></i></h3>
             <p>Eine kurze Beschreibung des Unternehmens und seiner Kultur.</p>
-        </div>
+
+            <h3>Aufgaben <i class="fas fa-chevron-down"></i></h3>
+            <p>Hier stehen die Aufgaben, die im Rahmen dieser Stelle erledigt werden müssen.</p>
+        
+            <h3>Anforderungen <i class="fas fa-chevron-down"></i></h3>
+            <p>Die erforderlichen Fähigkeiten und Qualifikationen für diese Stelle.</p>
+
+            <h3>Vergütung <i class="fas fa-chevron-down"></i></h3>
+            <p>1. Jahr: 1.000€,<br>2. Jahr: 1.100€,<br>3. Jahr: 1.200€</p>
+
     </div>
+
+    <div class="button-container">
+        <button class="bewerben-button">Bewerben</button>
+    </div>
+    
+
+    <script>
+                // Blende alle Abschnitte aus
+                $(".container p").hide();
+        // Füge einen Klick-Handler zu den Überschriften hinzu
+        $(".container h3").click(function() {
+            // Finde das nächstgelegene <p> Element und blende es ein oder aus
+            $(this).next("p").slideToggle();
+        });
+    </script>
+
 </body>
 </html>

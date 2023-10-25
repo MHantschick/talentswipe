@@ -147,6 +147,7 @@ body {
     width: 360px;
     height: 640px;
     margin: auto;
+    margin-bottom: 20px;
     border: 16px black solid;
     border-top-width: 60px;
     border-bottom-width: 60px;
@@ -252,7 +253,6 @@ body {
     background-color: #f2f2f2; /* Hintergrundfarbe des Hero-Bereichs */
     overflow: hidden; /* Um sicherzustellen, dass das Bild den Hero-Bereich nicht verlässt */
     position: relative;
-    margin-bottom: 20px
 }
 
 /* Das Bild wird als Hintergrundbild für den Hero-Bereich festgelegt */
@@ -289,6 +289,22 @@ body {
     font-size: 35px;
 }
 
+.hero-demo-link {
+    position: absolute;
+    top: 50%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Textfarbe anpassen */
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.hero-demo-link a {
+    color:#fff;
+}
+
+
 .a-appstore {
     position: absolute;
     right: 120px; 
@@ -312,22 +328,49 @@ a img {
 
 .container-description {
     display: flex;
+    margin-top: 20px
 }
 
-.app-screenshot {
+.app-screenshot-left {
     flex: 1;
-    margin-left: 80px;
+    margin-left: 5%;
   }
 
-  .app-screenshot img {
-    width: 50%;
+.app-screenshot-left img {
+    width: 75%;
+    height: auto;
+}
+
+.swipe-description-right {
+    flex: 2;
+    margin-top: 150px;
+    display: block;
+    justify-content: center; /* Horizontal zentriert */
+    align-items: center; /* Vertikal zentriert */
+     text-align: center; /* Text im Container zentriert */
+  }
+
+  .swipe-description-left {
+    flex: 2;
+    margin-top: 150px;
+    display: block;
+    justify-content: center; /* Horizontal zentriert */
+    align-items: center; /* Vertikal zentriert */
+     text-align: center; /* Text im Container zentriert */
+  }
+
+  .app-screenshot-right {
+    flex: 1;
+    margin-right: -5%;
+  }
+
+.app-screenshot-right img {
+    width: 75%;
     height: auto;
 }
 
 
-.swipe-description {
-    flex: 1;
-  }
+
 
 .company-container {
     width: 100%; /* Breite des Containers */
@@ -344,5 +387,16 @@ a img {
     max-height: 100%; /* Begrenzt die Höhe des Bildes auf die Höhe des Containers */
     display: block; /* Entfernt den Abstand unten, der normalerweise bei inline-Bildern vorhanden ist */
     pointer-events: none;
+}
+
+.demo-box {
+    text-align: center; /* Zentriert den Text horizontal */
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.demo-text {
+    font-size: 56px; /* Größere Schriftgröße */
+    line-height: 1.5; /* Erzeugt einen Zeilenabstand, um den Text über zwei Zeilen zu verteilen */
 }
 
