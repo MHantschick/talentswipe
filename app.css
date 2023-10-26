@@ -350,8 +350,14 @@ a img {
     margin-left: 5%;
   }
 
-.app-screenshot-left img {
+.app-screenshot-left img.swipecard {
     width: 50%;
+    height: auto;
+    margin-left: 75px;
+}
+
+.app-screenshot-left img.jobdetails {
+    width: 62%;
     height: auto;
     margin-left: 75px;
 }
@@ -422,14 +428,14 @@ a img {
 
 .questions {
     text-decoration: none;
-    background-color: #fff;
+    background-color: #f4f4ed;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
 }
 
 .questions h2 {
-    color:#00a2ff;
+    color:#0066ec;
 }
 
 .a-appstore-bottom {
