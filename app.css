@@ -154,10 +154,6 @@ body {
     border-radius: 36px;
     background-color: #fff;
   }
-
-  .smartphone-background {
-    background-color: #fff;
-  }
   
   /* The horizontal line on the top of the device */
   .smartphone:before {
@@ -333,15 +329,13 @@ a img {
 
 .container-description-1 {
     display: flex;
-    margin-top: 20px
-    
+    margin-top: 20px;
+    background-color: #fff;
 }
 
 .container-description-2 {
     display: flex;
     margin-top: 20px;
-    background-color: #fff;
-    
 }
 
 .app-screenshot-left {
@@ -413,7 +407,6 @@ a img {
     text-align: center; /* Zentriert den Text horizontal */
     margin-top: 20px;
     margin-bottom: 50px;
-    background-color: #fff;
 }
 
 .demo-text {
@@ -423,5 +416,26 @@ a img {
 
 .questions {
     text-decoration: none;
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.questions h2 {
+    color:#00a2ff;
+}
+
+.a-appstore-bottom {
+    position: relative;
+    text-decoration: none; /* Entfernt die Standard-Link-Unterstreichung */
+    align-items: center;
+    margin-right: 20px;
+}
+
+.a-playstore-bottom {
+    position: relative;
+    text-decoration: none; /* Entfernt die Standard-Link-Unterstreichung */
+    align-items: center;
 }
 
