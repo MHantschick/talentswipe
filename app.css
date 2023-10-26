@@ -1,7 +1,8 @@
 /*App-Demo*/
 
-body {
+body.app {
     font-family: "Urbanist", sans-serif;
+    background-color: #fff;
   }
 
 *, *:before, *:after {
@@ -153,6 +154,11 @@ body {
     border-bottom-width: 60px;
     border-radius: 36px;
     background-color: #fff;
+  }
+
+  .smartphone-background {
+    background-color: #f4f4ed;
+    padding-bottom: 20px;
   }
   
   /* The horizontal line on the top of the device */
@@ -336,12 +342,12 @@ a img {
 .container-description-2 {
     display: flex;
     margin-top: 20px;
+    background-color: #f4f4ed;
 }
 
 .app-screenshot-left {
     flex: 1;
     margin-left: 5%;
-    
   }
 
 .app-screenshot-left img {
@@ -352,7 +358,7 @@ a img {
 
 .swipe-description-right {
     flex: 2;
-    margin-top: 150px;
+    padding-top: 125px;
     display: block;
     justify-content: center; /* Horizontal zentriert */
     align-items: center; /* Vertikal zentriert */
@@ -378,7 +384,7 @@ a img {
   }
 
 .app-screenshot-right img {
-    width: 40%;
+    width: 45%;
     height: auto;
     margin-left: 300px;
 }
@@ -437,5 +443,6 @@ a img {
     position: relative;
     text-decoration: none; /* Entfernt die Standard-Link-Unterstreichung */
     align-items: center;
+
 }
 
