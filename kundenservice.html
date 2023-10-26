@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talent Swipe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="container-fluid">
+            <div class="navb-logo">
+                <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="navb-items d-none  d-xl-flex">
+                <div class="item">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="item">
+                    <a href="app.html">Zur App</a>
+                </div>
+                <div class="item">
+                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Angebote</a>
+                    <div class="dropdown-menu shadow-lg">
+                        <a class="dropdown-item" href="#">Arbeitgeber</a>
+                        <a class="dropdown-item" href="#">Schüler/Studenten</a>                        
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#">Kundenservice</a>
+                </div>
+                <div class="item-button">
+                    <a href="anmelden.html" type="button">Anmelden</a>
+                </div>
+
+            </div>
+
+
+            <!-- Wenn Display kleiner wird verschwindet Menü in Button -->
+
+            <div class="mobile-toggler d-xl-none">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#navb-modal">
+                    <h1><i class="bi bi-list"></i></h1>
+                </a>
+            </div>
+
+            <!-- Menü für Mobile devices -->
+            <div class="modal fade" id="navb-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="img/logo.png" alt="Logo" height="66px" width="auto">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-line">
+                                <i class="bi bi-house-door-fill"></i></i><a href="/">Home</a>
+                            </div>
+                            <div class="modal-line">
+                                <i class="bi bi-buildings-fill"></i><a href="#">Für Arbeitgeber</a>
+                            </div>
+                            <div class="modal-line">
+                                <i class="bi bi-info-circle-fill"></i><a href="#">Über uns</a>
+                            </div>
+                            <div class="modal-line">
+                                <i class="bi bi-chat-left-text-fill"></i><a href="#">Kontakt</a>
+                            </div>
+                            <a href="#" class="navb-button" type="button">Anmelden</a>
+                        </div>
+                        <div class="modal-footer">
+                            <a target="_blank" href="#" rel="noreferrer noopener"><i class="bi bi-instagram"></i></a>
+                            <a target="_blank" href="#" rel="noreferrer noopener"><i class="bi bi-twitter-x"></i></a>
+                            <a target="_blank" href="#" rel="noreferrer noopener"><i class="bi bi-linkedin"></i></a>
+                            <a target="_blank" href="#" rel="noreferrer noopener"><i class="bi bi-youtube"></i></a>
+                            <a target="_blank" href="#" rel="noreferrer noopener"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <!-- Inhalt -->
+
+    <div class="container-kundenservice">
+        <div class="support">
+          <h1>24/7 Support</h1>
+          <h2>Hotline: 0123 / 4567890</h2>
+          <h2>E-Mail: support@talentswipe.com</h2>
+          <br><br>
+          <h2>Oder nutzte ganz einfach unseren Chat-Bot unten rechts!</h2>
+      </div>
+        <div class="kundenservice-image">
+          <img src="./img/Kundenservice.jpg">
+        </div>
+        </div>
+
+
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+    <div class="chat-container">
+        <div class="chat-header">Chatbot</div>
+
+        <div class="chat-messages" id="chat-messages">
+          <div class="bot-message">
+            Hallo, schreib mir gerne deine Frage zur App.
+          </div>
+        </div>
+        <div class="chat-input">
+          <input
+            type="text"
+            id="user-input"
+            placeholder="Ihre Nachricht eingeben"
+          />
+          <button id="send-button">Senden</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Schließen</button>
+        </div>
+      </div>
+      </div>
+      <script src="chatbot.js"></script>
+    
+
+
+
+    <!-- Footer -->
+
+    <div class="footer-basic container-fluid">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="impressum.html">Impressum</a></li>
+                <li class="list-inline-item"><a href="datenschutz.html">Datenschutzerklärung</a></li>
+                <li class="list-inline-item"><a href="#">Cookies</a></li>
+                <li class="list-inline-item"><a href="#">Nutzungsbedingungen</a></li>
+                <li class="list-inline-item"><a href="#">FAQ</a></li>
+            </ul>
+            <p class="copyright">Talent Swipe © 2023</p>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
