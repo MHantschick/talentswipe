@@ -20,7 +20,7 @@ sendButton.addEventListener("click", () => {
       break;
     default:
       simulateBotResponse(
-        "Auf diese Frage habe ich keine Antwort. Kontaktiere bitte die hinterlegte E-Mail des Kundensupports: 'Support@Talent-Swipe.de'"
+        "Auf diese Frage habe ich keine Antwort. Kontaktiere bitte die hinterlegte E-Mail des Kundensupports: 'support@talentswipe.de'"
       ); //Wie kann ich eine businesspartnerschaft abschließen?
       break;
   }
