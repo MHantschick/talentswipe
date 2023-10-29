@@ -53,20 +53,8 @@ function showSlides2() {
 }
 showSlides2();
 
-/*Anmeldeseite*/
-/*document.getElementById('showForm').addEventListener('click', function() {
-    document.getElementById('formContainer').classList.remove('hidden');
-});*/
+/*Registrierung*/
 
-/*document.addEventListener('DOMContentLoaded', function() {
-    function toggleForm() {
-      var formContainer = document.getElementById('formContainer');
-      formContainer.classList.toggle('hidden');
-    }
-  
-    var showFormButton = document.getElementById('showForm');
-    showFormButton.addEventListener('click', toggleForm);
-  });*/
 
 function showText(buttonId) {
   var textToShow = document.getElementById(buttonId + "Text");
