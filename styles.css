@@ -281,11 +281,7 @@ header .item-button a:hover {
   margin-bottom: 0;
 }
 
-/*Datenschutzseite*/
-.ÜberschriftBlau {
-  color: #0066ec;
-  position: relative;
-}
+
 
 /*Registrierungsseite*/
 
@@ -329,6 +325,10 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+
+
+
 
 /*Anmeldeseite*/
 
@@ -662,6 +662,7 @@ iframe {
   border: 100%;
 }
 
+
 .rounded-box {
   width: 100px;
   height: 30px;
@@ -899,3 +900,18 @@ margin-bottom: 50px;
   right: 15px;
   z-index: 9;
 }
+
+/*Datenschutzseite*/
+
+.datenschutz-container{
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 50px;
+  height: 1500px;
+}
+
+
+
