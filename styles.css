@@ -63,7 +63,7 @@ header .item:hover {
   border-bottom: 3px solid #00a2ff;
 }
 
-header .item-button a {
+ .item-button a {
   background-color: #0066ec;
   width: 150px;
   height: 50px;
