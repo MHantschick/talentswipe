@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap");
 
+
 body {
   font-family: "Urbanist", sans-serif;
   overflow-x: hidden;
@@ -991,26 +992,4 @@ margin-bottom: 50px;
     text-align: center;
 }
 
-.card-container {
-  display: flex;
-}
 
-.card {
-  background-color: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  margin: 10px;
-  padding: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 300px;
-}
-
-.card h2 {
-  font-size: 24px;
-  color: #333;
-}
-
-.card p {
-  font-size: 16px;
-  color: #777;
-}

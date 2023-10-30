@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talent Swipe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="container-fluid">
+            <div class="navb-logo">
+                <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="navb-items d-none  d-xl-flex">
+                <div class="item">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="item">
+                    <a href="app.html">Zur App</a>
+                </div>
+                <div class="item">
+                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Angebote</a>
+                    <div class="dropdown-menu shadow-lg">
+                        <a class="dropdown-item" href="#">Arbeitgeber</a>
+                        <a class="dropdown-item" href="#">Schüler/Studenten</a>                        
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#">Kundenservice</a>
+                </div>
+                <div class="item-button">
+                    <a href="anmelden.html" type="button">Anmelden</a>
+                </div>
+
+            </div>
+
+
+            <!-- Wenn Display kleiner wird verschwindet Menü in Button -->
+
+            <div class="mobile-toggler d-xl-none">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#navb-modal">
+                    <h1><i class="bi bi-list"></i></h1>
+                </a>
+            </div>
+
+            <!-- Menü für Mobile devices -->
+            <div class="modal fade" id="navb-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="img/logo.png" alt="Logo" height="66px" width="auto">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-line">
+                                <i class="bi bi-house-door-fill"></i></i><a href="/">Home</a>
+                            </div>
+                            <div class="modal-line">
+                                <i class="bi bi-buildings-fill"></i><a href="#">Für Arbeitgeber</a>
+                            </div>
+                            <div class="modal-line">
+                                <i class="bi bi-info-circle-fill"></i><a href="#">Über uns</a>
+                            </div>
+                            <div class="modal-line">
+                                <i class="bi bi-chat-left-text-fill"></i><a href="#">Kontakt</a>
+                            </div>
+                            <a href="#" class="navb-button" type="button">Anmelden</a>
+                        </div>
+                        <div class="modal-footer">
+                            <a target="_blank" href="#" rel="noreferrer noopener"><i class="bi bi-instagram"></i></a>
+                            <a target="_blank" href="#" rel="noreferrer noopener"><i class="bi bi-twitter-x"></i></a>
+                            <a target="_blank" href="#" rel="noreferrer noopener"><i class="bi bi-linkedin"></i></a>
+                            <a target="_blank" href="#" rel="noreferrer noopener"><i class="bi bi-youtube"></i></a>
+                            <a target="_blank" href="#" rel="noreferrer noopener"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <!-- Inhalt -->
+
+    <section class="h-100 h-custom">
+        <div class="container h-100 py-5">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+      
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="h5">Shopping Bag</th>
+                      <th scope="col">Format</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  
+                    <tr>
+                      <th scope="row" class="border-bottom-0">
+                        <div class="d-flex">
+                          <div class="flex-column ms-4">
+                            <p class="mb-2">Stellenanzeige Premium Plus</p>
+                          </div>
+                        </div>
+                      </th>
+                      <td class="align-middle border-bottom-0">
+                        <p class="mb-0" style="font-weight: 500;">Paperback</p>
+                      </td>
+                      <td class="align-middle border-bottom-0">
+                        <div class="d-flex flex-row">
+                          <button class="btn btn-link px-2"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                          </button>
+      
+                          <input id="form1" min="0" name="quantity" value="1" type="number"
+                            class="form-control form-control-sm" style="width: 50px;" />
+      
+                          <button class="btn btn-link px-2"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                      </td>
+                      <td class="align-middle border-bottom-0">
+                        <p class="mb-0" style="font-weight: 500;">$13.50</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+      
+              <div class="card shadow-2-strong mb-5 mb-lg-0" style="border-radius: 16px;">
+                <div class="card-body p-4">
+      
+                  <div class="row">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mb-4 mb-md-0">
+                      <form>
+                        <div class="d-flex flex-row pb-3">
+                          <div class="d-flex align-items-center pe-2">
+                            <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1v"
+                              value="" aria-label="..." checked />
+                          </div>
+                          <div class="rounded border w-100 p-3">
+                            <p class="d-flex align-items-center mb-0">
+                              <i class="fab fa-cc-mastercard fa-2x text-dark pe-2"></i>Credit
+                              Card
+                            </p>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row pb-3">
+                          <div class="d-flex align-items-center pe-2">
+                            <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel2v"
+                              value="" aria-label="..." />
+                          </div>
+                          <div class="rounded border w-100 p-3">
+                            <p class="d-flex align-items-center mb-0">
+                              <i class="fab fa-cc-visa fa-2x fa-lg text-dark pe-2"></i>Debit Card
+                            </p>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row">
+                          <div class="d-flex align-items-center pe-2">
+                            <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel3v"
+                              value="" aria-label="..." />
+                          </div>
+                          <div class="rounded border w-100 p-3">
+                            <p class="d-flex align-items-center mb-0">
+                              <i class="fab fa-cc-paypal fa-2x fa-lg text-dark pe-2"></i>PayPal
+                            </p>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-6">
+                      <div class="row">
+                        <div class="col-12 col-xl-6">
+                          <div class="form-outline mb-4 mb-xl-5">
+                            <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
+                              placeholder="John Smith" />
+                            <label class="form-label" for="typeName">Name on card</label>
+                          </div>
+      
+                          <div class="form-outline mb-4 mb-xl-5">
+                            <input type="text" id="typeExp" class="form-control form-control-lg" placeholder="MM/YY"
+                              size="7" id="exp" minlength="7" maxlength="7" />
+                            <label class="form-label" for="typeExp">Expiration</label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-xl-6">
+                          <div class="form-outline mb-4 mb-xl-5">
+                            <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
+                              placeholder="1111 2222 3333 4444" minlength="19" maxlength="19" />
+                            <label class="form-label" for="typeText">Card Number</label>
+                          </div>
+      
+                          <div class="form-outline mb-4 mb-xl-5">
+                            <input type="password" id="typeText" class="form-control form-control-lg"
+                              placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
+                            <label class="form-label" for="typeText">Cvv</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3">
+                      <div class="d-flex justify-content-between" style="font-weight: 500;">
+                        <p class="mb-2">Subtotal</p>
+                        <p class="mb-2">$23.49</p>
+                      </div>
+      
+                      <div class="d-flex justify-content-between" style="font-weight: 500;">
+                        <p class="mb-0">Shipping</p>
+                        <p class="mb-0">$2.99</p>
+                      </div>
+      
+                      <hr class="my-4">
+      
+                      <div class="d-flex justify-content-between mb-4" style="font-weight: 500;">
+                        <p class="mb-2">Total (tax included)</p>
+                        <p class="mb-2">$26.48</p>
+                      </div>
+      
+                      <button type="button" class="btn btn-primary btn-block btn-lg">
+                        <div class="d-flex justify-content-between">
+                          <span>Checkout</span>
+                          <span>$26.48</span>
+                        </div>
+                      </button>
+      
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </section>
+    
+
+    <!-- Footer -->
+
+    <div class="footer-basic container-fluid">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="impressum.html">Impressum</a></li>
+                <li class="list-inline-item"><a href="datenschutz.html">Datenschutzerklärung</a></li>
+                <li class="list-inline-item"><a href="#">Cookies</a></li>
+                <li class="list-inline-item"><a href="#">Nutzungsbedingungen</a></li>
+                <li class="list-inline-item"><a href="#">FAQ</a></li>
+            </ul>
+            <p class="copyright">Talent Swipe © 2023</p>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
