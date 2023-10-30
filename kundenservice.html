@@ -9,6 +9,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
@@ -100,7 +101,39 @@
         <div class="kundenservice-image">
           <img src="./img/Kundenservice.jpg">
         </div>
-        </div>
+
+        
+    </div>
+    <div class="container-fluid kontakt-container">
+        <h2>Kontaktformular</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefonnummer:</label>
+                <input type="tel" class="form-control" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="category">Kategorie:</label>
+                <select class="form-control" id="category" name="category">
+                    <option value="Schüler">Schüler</option>
+                    <option value="Student">Student</option>
+                    <option value="Arbeitgeber">Arbeitgeber</option>
+                </select>
+            </div>
+            <fieldset class="form-group">
+                <legend>Ihre Nachricht:</legend>
+                <textarea class="form-control" rows="4" name="description" placeholder="Maximal 2000 Zeichen." maxlength="2000"></textarea>
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Absenden</button>
+        </form>
+    </div>
 
 
     <button class="open-button" onclick="openForm()">Chat</button>

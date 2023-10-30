@@ -804,6 +804,13 @@ body.faq {
   flex: 1;
 }
 
+.kontakt-container {
+  background-color: #fff;
+  color: #0066ec;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 30px;
+}
 /* Chatbot */
 
 .chat-container {
