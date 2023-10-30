@@ -796,7 +796,7 @@ body.faq {
 
 .support {
   flex: 2;
-  margin-top: 50px;
+  margin-top: 65px;
   display: block;
   margin-left: 50px;
 }
@@ -899,8 +899,8 @@ body.faq {
   cursor: pointer;
   opacity: 0.8;
   position: fixed;
-  bottom: 23px;
-  right: 28px;
+  bottom: 30px;
+  right: 40px;
   width: 280px;
 }
 
