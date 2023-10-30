@@ -6,6 +6,8 @@ body {
   background-color: #f4f4ed;
 }
 
+html { scroll-behavior: smooth; }
+
 a {
   text-decoration: none;
   color: #0066ec;
@@ -1045,9 +1047,11 @@ body.faq {
 /*Bewerber*/
 
 .bewerber-jumbotron {
-  background-image: url("./img/arbeitgeber.jpeg");
+
+  background-image: url("./img/bewerber.jpg");
   background-size: cover;
-  height: 60vh;
+  background-position: center;
+  height: 90vh;
   display: flex;
   align-items: flex-end;
   padding-bottom: 10vh;
@@ -1055,4 +1059,23 @@ body.faq {
 .top-container {
   display: flex;
   justify-content: space-between;
+}
+
+.bewerber-description1 {
+  padding: 50px;
+  color: #666;
+  background-color: white;
+}
+
+.bewerber-description1 h2 {
+  color: #0066ec;
+  margin-bottom: 20px;
+}
+
+.bewerber-description1 p, .bewerber-description1 li {
+    font-size: 18px;
+}
+
+.bewerber-description2 {
+  padding: 50px;
 }
