@@ -88,70 +88,54 @@
 
     </header>
     <!-- Inhalt -->
-<div class="container login-container">
-    <h3>Du bist noch kein Premium-Mitglied.</h3>
-    <button class=button2>Jetzt Premium-Mitglied werden!</button>
-</div>
-<div class="container login-container">
-    <h2>Kontodetails</h2>
-    <div>
-        <p><strong>Name: </strong>Max Mustermann</p>
-        <p><strong>E-Mail: </strong>max.mustermann@example.com</p>
-        <p><strong>Adresse: </strong>Coblitzalee 1, 68163 Mannheim</p>
-        <p><strong>Maximaler Suchumkreis: </strong>50-70 Kilometer</p>
-        <p><strong>Ich suche: </strong>Duales Studium</p>
+
+    <div class="headline">
+        <h1><strong>It's a Match!</strong></h1>
     </div>
-    <a href="kontoändern.html">
-        <button class="button2">Kontodetails ändern</button>
-    </a>
-    <a href="anmelden.html">
-        <button class="button2">Abmelden</button>
-    </a>    
-</div>
-
-
-
-
-    <div class="container login-container">
-    <h2>Meine Matches</h2>
-
-    <div class="small-windows-container">
-
-
-    <div class="small-window">
-    <div class="swipe--cards" class="company-container">
-       <img src="https://upload.wikimedia.org/wikipedia/de/thumb/1/1d/DHBW-Logo.svg/2560px-DHBW-Logo.svg.png" class="company-logo">
-          <div class="flex-container">
-            <div class="rounded-box">
-                <img src="img/location-pin.png" class="img-icon" alt="Pin">
-                <span class="icon-text">Mannheim</span>
-            </div>
-            <div class="rounded-box">
-                <img src="img/graduation-hat.png" class="img-icon" alt="Hat">
-                <span class="icon-text">Studium</span>
-            </div>
-            <div class="rounded-box">
-              <img src="img/calendar.png" class="img-icon" alt="Calendar">
-              <span class="icon-text">10/2024</span>
-            </div>
-        </div>    
-          <h3>Duales Studium</h3>
-          <p>Wirtschaftsinformatik - Application Management</p>
-          <a href="chat.html" class="button2">Jetzt Chatten!</a>
-            <p></p>
-        </div>
-    </div>
-
-
-
     
 
+    <div class="chat-layout">
+    <div class="small-window">
+    <div class="swipe--cards" class="company-container">
+        <img src="https://upload.wikimedia.org/wikipedia/de/thumb/1/1d/DHBW-Logo.svg/2560px-DHBW-Logo.svg.png" class="company-logo">
+           <div class="flex-container">
+             <div class="rounded-box">
+                 <img src="img/location-pin.png" class="img-icon" alt="Pin">
+                 <span class="icon-text">Mannheim</span>
+             </div>
+             <div class="rounded-box">
+                 <img src="img/graduation-hat.png" class="img-icon" alt="Hat">
+                 <span class="icon-text">Studium</span>
+             </div>
+             <div class="rounded-box">
+               <img src="img/calendar.png" class="img-icon" alt="Calendar">
+               <span class="icon-text">10/2024</span>
+             </div>
+         </div>    
+           <h3>Duales Studium</h3>
+           <p>Wirtschaftsinformatik - Application Management</p>
+           <a href="bewerberkonto.html" class="button2">Zurück</a>
+             <p></p>
+         </div>
+    </div>
+    <div class="chat-container">
+        <div class="chat-header">Bewerbungs-Chat</div>
 
-
-        
-</div>
-</div>
-<br>
+        <div class="chat-messages" id="chat-messages">
+         
+        </div>
+        <div class="chat-input">
+          <input
+            type="text"
+            id="user-input"
+            placeholder="Schreibe Deine erste Nachricht."
+          />
+          <button id="send-button">Senden</button>
+        </div>
+      </div>
+      </div>
+    
+      <script src="chat.js"></script>
 
     <!-- Footer -->
 

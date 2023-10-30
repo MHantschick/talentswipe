@@ -618,6 +618,7 @@ img {
   padding: 20px;
   text-align: center;
   margin: 5px;
+  background-color: #fff;
 }
 
 .small-windows-container {
@@ -1005,4 +1006,38 @@ body.faq {
 
 .container-agb {
   padding: 16px;
+}
+
+/*Chat*/
+.chat-layout {
+  display: flex;
+  
+  background-color: #fff;
+  
+}
+
+.chat-layout .small-window {
+  flex: 1;
+  margin-top: 50px;
+  display: block;
+  margin-left: 200px;
+  max-width: 400px;
+  height: 400px;
+}
+
+.chat-layout .chat-container {
+  flex: 1;
+  margin-top: 49px;
+  margin-right: 205px;
+}
+
+.headline {
+  padding-top: 20px;
+  background-color: #fff;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.headline h1 {
+  color:#0066ec;
 }
