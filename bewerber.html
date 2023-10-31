@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talent Swipe</title>
+    <link rel="stylesheet" href="shoppingcart/fsb.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -40,51 +42,6 @@
                 </div>
 
             </div>
-
-
-            <!-- Wenn Display kleiner wird verschwindet Menü in Button -->
-
-            <div class="mobile-toggler d-xl-none">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#navb-modal">
-                    <h1><i class="bi bi-list"></i></h1>
-                </a>
-            </div>
-
-            <!-- Menü für Mobile devices -->
-            <div class="modal fade" id="navb-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <img src="img/logo.png" alt="Logo" height="66px" width="auto">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal-line">
-                                <i class="bi bi-house-door-fill"></i></i><a href="/">Home</a>
-                            </div>
-                            <div class="modal-line">
-                                <i class="bi bi-buildings-fill"></i><a href="#">Für Arbeitgeber</a>
-                            </div>
-                            <div class="modal-line">
-                                <i class="bi bi-info-circle-fill"></i><a href="#">Über uns</a>
-                            </div>
-                            <div class="modal-line">
-                                <i class="bi bi-chat-left-text-fill"></i><a href="#">Kontakt</a>
-                            </div>
-                            <a href="#" class="navb-button" type="button">Anmelden</a>
-                        </div>
-                        <div class="modal-footer">
-                            <a target="_blank" href="#" rel="noreferrer noopener"><i class="bi bi-instagram"></i></a>
-                            <a target="_blank" href="#" rel="noreferrer noopener"><i class="bi bi-twitter-x"></i></a>
-                            <a target="_blank" href="#" rel="noreferrer noopener"><i class="bi bi-linkedin"></i></a>
-                            <a target="_blank" href="#" rel="noreferrer noopener"><i class="bi bi-youtube"></i></a>
-                            <a target="_blank" href="#" rel="noreferrer noopener"><i class="bi bi-facebook"></i></a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
 
     </header>
     <!-- Inhalt -->
@@ -228,8 +185,7 @@
             </ul>
           </div>
           <div class="card-footer bg-white py-3">
-            <button type="button" class="btn btn-primary">Jetzt abonnieren</button>
-          </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cartModal">Jetzt abonnieren</button>
         </div>
         <!-- Card -->
       </div>
@@ -242,6 +198,30 @@
     
 </div>
 
+
+
+ <!-- Warenkorb Modal -->
+ <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="img/logo.png" alt="Logo" height="64px" width="auto">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-subscription">
+                    <h5>Monatliches Abonnement für ein Premium-Profil</h5>
+                    <div class="preis">€7.99 monatlich</div>
+                    <div class="period">Nächste Abbuchung: 01.12.2023</div>
+                </div>
+                
+                <div class="modal-payment">
+                    <div id="paypal-button-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -271,12 +251,13 @@
 
 
 <script src="script.js"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+<script src="paypal.js"></script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-    <script src="cookies/cookieconsent.js" defer></script>
-    <script defer src="cookieconsent-init.js"></script>
 </body>
 
 </html>
