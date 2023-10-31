@@ -1,4 +1,4 @@
-/*App-Demo*/
+/*App*/
 
 body.app {
     font-family: "Urbanist", sans-serif;
@@ -140,8 +140,6 @@ body.app {
   .fa-remove {
     color: #FE2E2E;
   }
-
-  /* The device with borders */
     
 .smartphone {
     position: relative;
@@ -161,7 +159,6 @@ body.app {
     padding-bottom: 20px;
   }
   
-  /* The horizontal line on the top of the device */
   .smartphone:before {
     content: '';
     display: block;
@@ -175,7 +172,6 @@ body.app {
     border-radius: 10px;
   }
   
-  /* The circle on the bottom of the device */
   .smartphone:after {
     content: '';
     display: block;
@@ -189,7 +185,6 @@ body.app {
     border-radius: 50%;
   }
   
-  /* The screen (or content) of the device */
   .smartphone .content {
     width: 100%;
     height: 100%;
@@ -203,13 +198,12 @@ body.app {
   }
 
   .rounded-box {
-    /* Keine feste Breite und Höhe, automatische Anpassung an den Text */
     margin: 0 1px;
-    background-color: #dddddd; /* Grauer Hintergrund */
-    border-radius: 10px; /* Abrundungseffekt */
-    display: flex; /* Container in Flex-Box umwandeln */
-    align-items: center; /* Text vertikal in der Mitte ausrichten */
-    justify-content: left; /* Text horizontal links ausrichten */
+    background-color: #dddddd;
+    border-radius: 10px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: left; 
     pointer-events: none;
 }
 
@@ -228,21 +222,21 @@ body.app {
 
 .flex-container {
     padding-top: 20px;
-    display: flex; /* Flexbox verwenden */
-    justify-content: space-between; /* Abstand zwischen den Elementen verteilen */
-    align-items: center; /* Elemente vertikal zentrieren */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
     pointer-events: none;
 }
 
 .mehr-details-button {
     display: inline-block;
-    padding: 8px 16px; /* Kleineres Padding für Breite und Höhe */
+    padding: 8px 16px; 
     background-color: #dddddd;
     color: #000;
     text-decoration: none;
     border: none;
-    border-radius: 3px; /* Kleinere Abrundung der Ecken */
-    font-size: 14px; /* Kleinere Schriftgröße */
+    border-radius: 3px; 
+    font-size: 14px; 
     cursor: pointer;
     margin-top: 20px;
     transition: background-color 0.3s, transform 0.2s;
@@ -253,20 +247,18 @@ body.app {
     transform: scale(1.05);
 }
 
-/* Der Hero-Bereich nimmt den gesamten sichtbaren Bereich ein */
 .hero-container {
     width: 100%;
-    height: 88vh; /* 100% der Bildschirmhöhe */
-    background-color: #fff; /* Hintergrundfarbe des Hero-Bereichs */
-    overflow: hidden; /* Um sicherzustellen, dass das Bild den Hero-Bereich nicht verlässt */
+    height: 88vh; 
+    background-color: #fff; 
+    overflow: hidden; 
     position: relative;
 }
 
-/* Das Bild wird als Hintergrundbild für den Hero-Bereich festgelegt */
 .hero-image {
     background-image: url('./img/Frau-mit-Smartphone.jpg');
-    background-size: cover; /* Das Bild wird gestreckt, um den gesamten Hero-Bereich abzudecken */
-    background-position: center; /* Das Bild wird zentriert ausgerichtet */
+    background-size: cover; 
+    background-position: center; 
     height: 100vh;
     width: 100%;
     display: flex;
@@ -280,7 +272,7 @@ body.app {
     left: 18%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #fff; /* Textfarbe anpassen */
+    color: #fff; 
     font-weight: bold;
     font-size: 35px;
 }
@@ -291,7 +283,7 @@ body.app {
     left: 18%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #fff; /* Textfarbe anpassen */
+    color: #fff; 
     font-weight: bold;
     font-size: 35px;
 }
@@ -302,7 +294,7 @@ body.app {
     left: 82%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #fff; /* Textfarbe anpassen */
+    color: #fff; 
     font-weight: bold;
     font-size: 35px;
 }
@@ -317,7 +309,7 @@ body.app {
     right: 120px; 
     top: 30%;
     transform: translate(0, -50%);
-    text-decoration: none; /* Entfernt die Standard-Link-Unterstreichung */
+    text-decoration: none; 
 }
 
 .a-playstore {
@@ -325,12 +317,12 @@ body.app {
     right: 120px; 
     top: 70%;
     transform: translate(0, -50%);
-    text-decoration: none; /* Entfernt die Standard-Link-Unterstreichung */
+    text-decoration: none; 
 }
 
 a img {
-    width: 300px; /* Passe die Breite des Buttons an */
-    height: auto; /* Behalte das Seitenverhältnis bei */
+    width: 300px;
+    height: auto; 
 }
 
 .container-description-1 {
@@ -367,9 +359,9 @@ a img {
     flex: 2;
     padding-top: 60px;
     display: block;
-    justify-content: center; /* Horizontal zentriert */
-    align-items: center; /* Vertikal zentriert */
-    text-align: center; /* Text im Container zentriert */
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
     max-width: 600px;
     margin-right: 150px;
   }
@@ -378,9 +370,9 @@ a img {
     flex: 2;
     margin-top: 70px;
     display: block;
-    justify-content: center; /* Horizontal zentriert */
-    align-items: center; /* Vertikal zentriert */
-     text-align: center; /* Text im Container zentriert */
+    justify-content: center; 
+    align-items: center; 
+     text-align: center; 
      max-width: 650px;
     margin-left: 150px;
   }
@@ -400,31 +392,31 @@ a img {
 
 
 .company-container {
-    width: 100%; /* Breite des Containers */
-    height: 25%; /* Höhe des Containers */
-    display: flex; /* Verwendet Flexbox zur Zentrierung */
-    justify-content: center; /* Horizontal zentrieren */
-    align-items: center; /* Vertikal zentrieren */
-    overflow: hidden; /* Verhindert das Überlaufen des Bildes aus dem Container */
+    width: 100%; 
+    height: 25%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden; 
     pointer-events: none;
 }
 
 .company-logo {
-    max-width: 100%; /* Begrenzt die Breite des Bildes auf die Breite des Containers */
-    max-height: 100%; /* Begrenzt die Höhe des Bildes auf die Höhe des Containers */
-    display: block; /* Entfernt den Abstand unten, der normalerweise bei inline-Bildern vorhanden ist */
+    max-width: 100%; 
+    max-height: 100%; 
+    display: block; 
     pointer-events: none;
 }
 
 .demo-box {
-    text-align: center; /* Zentriert den Text horizontal */
+    text-align: center; 
     padding-top: 1px;
     margin-bottom: 50px;
 }
 
 .demo-text {
-    font-size: 56px; /* Größere Schriftgröße */
-    line-height: 1.5; /* Erzeugt einen Zeilenabstand, um den Text über zwei Zeilen zu verteilen */
+    font-size: 56px; 
+    line-height: 1.5; 
 }
 
 .questions {
@@ -441,14 +433,14 @@ a img {
 
 .a-appstore-bottom {
     position: relative;
-    text-decoration: none; /* Entfernt die Standard-Link-Unterstreichung */
+    text-decoration: none; 
     align-items: center;
     margin-right: 20px;
 }
 
 .a-playstore-bottom {
     position: relative;
-    text-decoration: none; /* Entfernt die Standard-Link-Unterstreichung */
+    text-decoration: none; 
     align-items: center;
 
 }
