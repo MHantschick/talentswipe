@@ -207,7 +207,6 @@ body.app {
     pointer-events: none;
 }
 
-
 .img-icon {
     width: 30px;
     height: 30px;
@@ -303,7 +302,6 @@ body.app {
     color:#fff;
 }
 
-
 .a-appstore {
     position: absolute;
     right: 120px; 
@@ -388,9 +386,6 @@ a img {
     margin-left: 215px;
 }
 
-
-
-
 .company-container {
     width: 100%; 
     height: 25%; 
@@ -444,5 +439,3 @@ a img {
     align-items: center;
 
 }
-
-

@@ -408,11 +408,11 @@ img {
 
 .start-2 .section-content {
   flex: 1;
-  max-width: 500px; /* Schmale Breite für den Textbereich */
+  max-width: 500px; 
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Text vertikal zentrieren */
+  justify-content: center; 
   align-items: center;
   text-align: justify;
   margin-right: 100px;
@@ -459,8 +459,8 @@ img {
 }
 
 .start-4 .text:hover {
-  transform: scale(1.5); /* Text leicht größer machen */
-  color: #00a2ff; /* Text leicht dunkler machen */
+  transform: scale(1.5);
+  color: #00a2ff; 
 }
 
 /*startseite 3section  */
@@ -474,11 +474,11 @@ img {
 }
 .start-3 .section-content {
   flex: 1;
-  max-width: 500px; /* Schmale Breite für den Textbereich */
+  max-width: 500px; 
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Text vertikal zentrieren */
+  justify-content: center; 
   align-items: center;
   text-align: justify;
   margin-left: 100px;
@@ -554,8 +554,8 @@ img {
 
 .small-windows-container {
   display: flex;
-  justify-content: space-between; /* Die Fenster nebeneinander platzieren */
-  max-width: 500px; /*Begrenzt die Breite der Container */
+  justify-content: space-between; 
+  max-width: 500px; 
 }
 
 .img-icon {
@@ -571,21 +571,21 @@ img {
 
 .flex-container {
   padding-top: 20px;
-  display: flex; /* Flexbox verwenden */
-  justify-content: space-between; /* Abstand zwischen den Elementen verteilen */
-  align-items: center; /* Elemente vertikal zentrieren */
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
   pointer-events: none;
 }
 
 .mehr-details-button {
   display: inline-block;
-  padding: 8px 16px; /* Kleineres Padding für Breite und Höhe */
+  padding: 8px 16px; 
   background-color: #dddddd;
   color: #000;
   text-decoration: none;
   border: none;
-  border-radius: 3px; /* Kleinere Abrundung der Ecken */
-  font-size: 14px; /* Kleinere Schriftgröße */
+  border-radius: 3px; 
+  font-size: 14px; 
   cursor: pointer;
   margin-top: 20px;
   transition: background-color 0.3s, transform 0.2s;
@@ -608,11 +608,11 @@ iframe {
   width: 100px;
   height: 30px;
   margin: 0 1px;
-  background-color: #dddddd; /* Grauer Hintergrund */
-  border-radius: 10px; /* Abrundungseffekt */
-  display: flex; /* Container in Flex-Box umwandeln */
-  align-items: center; /* Text vertikal in der Mitte ausrichten */
-  justify-content: left; /* Text horizontal in der Mitte ausrichten */
+  background-color: #dddddd; 
+  border-radius: 10px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: left; 
   pointer-events: none;
 }
 
@@ -623,19 +623,19 @@ iframe {
 }
 
 .company-container {
-  width: 100%; /* Breite des Containers */
-  height: 25%; /* Höhe des Containers */
-  display: flex; /* Verwendet Flexbox zur Zentrierung */
-  justify-content: center; /* Horizontal zentrieren */
-  align-items: center; /* Vertikal zentrieren */
-  overflow: hidden; /* Verhindert das Überlaufen des Bildes aus dem Container */
+  width: 100%; 
+  height: 25%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  overflow: hidden; 
   pointer-events: none;
 }
 
 .company-logo {
-  max-width: 100%; /* Begrenzt die Breite des Bildes auf die Breite des Containers */
-  max-height: 100%; /* Begrenzt die Höhe des Bildes auf die Höhe des Containers */
-  display: block; /* Entfernt den Abstand unten, der normalerweise bei inline-Bildern vorhanden ist */
+  max-width: 100%; 
+  max-height: 100%; 
+  display: block; 
   pointer-events: none;
 }
 
@@ -648,15 +648,14 @@ iframe {
 /* FAQ */
 
 body.faq {
-  /* Hintergrund speziell für die Unterseite */
   background-color: #fff;
 }
 
 .faq-image {
   margin-top: 5px;
   display: flex;
-  justify-content: center; /* Horizontal zentriert */
-  align-items: center; /* Vertikal zentriert */
+  justify-content: center; 
+  align-items: center; 
 }
 .faq-image img {
   width: 40%;
@@ -673,9 +672,8 @@ body.faq {
   width: 60%;
   margin: auto;
 }
-/* Style the buttons that are used to open and close the faq-page body */
+
 .faq-page {
-  /* background-color: #eee; */
   color: #0066ec;
   cursor: pointer;
   padding: 30px 20px;
@@ -687,17 +685,16 @@ body.faq {
 }
 .faq-body {
   margin: auto;
-  /* text-align: center; */
   width: 55%;
   padding: auto;
   font-size: 20px;
 }
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
 .active,
 .faq-page:hover {
   background-color: #f9f9f9;
 }
-/* Style the faq-page panel. Note: hidden by default */
+
 .faq-body {
   padding: 0 18px;
   background-color: white;
@@ -706,7 +703,6 @@ body.faq {
 }
 .faq-page:after {
   content: "\02795";
-  /* Unicode character for "plus" sign (+) */
   font-size: 13px;
   color: #777;
   float: right;
@@ -714,7 +710,6 @@ body.faq {
 }
 .active:after {
   content: "\2796";
-  /* Unicode character for "minus" sign (-) */
 }
 
 /* Kundenservice */
@@ -821,7 +816,6 @@ body.faq {
   cursor: pointer;
 }
 
-/* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
   background-color: #0066ec;
   color: white;
@@ -874,9 +868,8 @@ body.faq {
 }
 
 .submit-container {
-  text-align: center; /* Zentriert den Button horizontal */
+  text-align: center;
 }
-
 
 .btn-primary {
   background-color: #0066ec;
@@ -890,7 +883,6 @@ body.faq {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 
 .capsule {
   background-color: #fff;
@@ -933,7 +925,6 @@ body.faq {
 }
 
 /*AGB*/
-
 .container-agb {
   padding: 16px;
 }
